@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" >
+    <div class="hero-container">
+        <div class="carousel slide carousel-fade" data-bs-interval="5000" data-bs-ride="carousel" id="heroCarousel">
+
+            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+            <div class="carousel-inner" role="listbox">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active"
+                     style="background-image: url(static/assets/img/slide/slide-1.jpg)">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2 class="animate__animated animate__fadeInDown">Hello! I am
+                                <span>Pranali Darekar</span></h2>
+                            <p class="animate__animated animate__fadeInUp">Being raised in a family by parents of
+                                great virtues who always had a great revere for education and have cultivated both
+                                the qualities in me, I have always been taught and which I believe firmly over the
+                                years that Education is a key to success. Education in the sense does not include
+                                only academics and success is not only the last great step we achieve. So, I am a
+                                fast pace learner who likes to learn about new technology and new things that come
+                                across my path and I am a voracious reader. I firmly believe success is a process
+                                for which one should be patient.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item" style="background-image: url(static/assets/img/slide/slide-2.jpg)">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2 class="animate__animated animate__fadeInDown">Educational <span>Background</span>
+                            </h2>
+                            <p class="animate__animated animate__fadeInUp">
+                                Vidyalankar Institute of Technology <br>(2019 – 2023)<br>
+                                Bachelor of Engineering (Specialization in Information Technology)<br><i>AVERAGE
+                                CGPA – 8.87</i><br>
+                                Ramnivas Ruia Junior College <br> (2018 – 2019)<br>
+                                Higher Secondary Certificate <br><i>PERCENTAGE – 67.08%</i><br>
+                                Dr. Babasaheb Ambedkar Vidyalaya (2016 – 2017)<br>
+                                Secondary School Certificate <br><i>PERCENTAGE – 93.20%</i><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item" style="background-image: url(static/assets/img/slide/slide-3.jpg)">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2 class="animate__animated animate__fadeInDown">Technical & Soft <span>Skills</span>
+                            </h2>
+                            <p class="animate__animated animate__fadeInUp">
+                                <b>Technical Skills </b><br>
+                                • Languages: C, C++, Python, HTML, CSS <br>
+                                • Technologies: DBMS, Git <br>
+                                <b>Soft Skills </b><br>
+                                • Communication Skills <br>
+                                • Team Spirit, Team Work and Collaboration <br>
+                                • Leadership <br>
+                                • Problem Solving <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="carousel-control-prev" data-bs-slide="prev" href="#heroCarousel" role="button">
+                <span aria-hidden="true" class="carousel-control-prev-icon bi bi-chevron-left"></span>
+            </a>
+
+            <a class="carousel-control-next" data-bs-slide="next" href="#heroCarousel" role="button">
+                <span aria-hidden="true" class="carousel-control-next-icon bi bi-chevron-right"></span>
+            </a>
+
+        </div>
+    </div>
+</section><!-- End Hero -->
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<section class="contact" id="contact" style="padding: 20px">
+
+        <div class="container" style="padding: 22px; ">
+            <h5>Search for Names: </h5>
+    <input  type="text" id="myInput" onkeyup="myFunction1()" placeholder="Search for names.."
+               title="Type in a name">
+    </div>
+    <div class="container">
+        <table class='table table-bordered table-dark table-responsive' style="overflow-x:auto;" id="myTable">
+            <thead class="thead-dark">
+            <tr >
+                <th scope="col">Sr. No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Technology Used</th>
+                <th scope="col">Type of App(Android, Web, Desktop)</th>
+                <th>Project Type(Mini Project/ Internship Project)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Sign Language to Text Converter</td>
+                <td>Built a gesture recognizing system with help of Machine Learning to make process of reading sign
+language easy. Convolutional Neural Network (CNN) was used for creating a model for training the data.</td>
+                <td>Machine Learning</td>
+                <td>Desktop Application</td>
+                <td>Mini Project</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>HomeFinder</td>
+                <td>Built UI components in HTML, CSS and Bootstrap to digitize the process of rental home. Designed and implemented database and backend using sqlite3 and Django Framework</td>
+                <td>Django Framework<br>HTML<br>CSS<br>Bootstrap</td>
+                <td>Web Application</td>
+                <td>Mini Project</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Student Repository System</td>
+                <td>Built a Student Repository system to digitize the process of storing and accessing student certificates and marksheets. Designed and implemented database and backend using sqlite3 and Django Framework.</td>
+                <td>Django Framework<br>HTML<br>CSS<br>Bootstrap</td>
+                <td>Web Application</td>
+                <td>Internship Project</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Steganography</td>
+                <td>Built a Steganography desktop app which helps encode the data into an image and decode the hidden data from the image.</td>
+                <td>Python</td>
+                <td>Desktop Application</td>
+                <td>Mini Project</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Quiz App</td>
+                <td>Built a Quiz app which helps teachers post the quiz and the students to attempt the quiz.</td>
+                <td>Android Studio<br>Java</td>
+                <td>Android Application</td>
+                <td>Mini Project</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+{% endblock %}
